@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="HandheldFriendly" content="true">
+    
+    <title>Skill Safari| Rock,Paper,Scissors</title>
+    <!--bootstrap link-->
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <script src="script.js" defer></script>
+    
+    </head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="box col ">
+                    <div class="gameName" >
+                      <img  src="images/logo.svg">
+                    </div>
+                    <div class="score-box ">
+                      <h4 class="px-3 py-3 " style="letter-spacing: 3px; font-family: 'Barlow Semi Condensed',sans-serif; font-size: 20px; color: hsl(229, 64%, 46%)" >SCORE</h4>
+                      <p  style="font-family: 'Barlow Semi Condensed',sans-serif; font-weight: 500; font-size:50px; margin-top: -40px; color: hsl(230, 14%, 45%) " id="score"> 0</p>
+                    </div>
+                    </div> 
+            </div>
+        </div>
+    </header>
+
+    <section class="mid">
+      <div class="container">
+        <main id="main">
+     
+            <button class="btn-circle btn-paper pick" data-choice="paper" >
+              <span class="wrapper">
+              <img class="rounded-circle" src="images/icon-paper.svg" alt="paper icon">
+              </span>
+            </button>
+               
+           
+              <button class="btn-circle  btn-scissors pick" data-choice="scissors"  >
+                <span class="wrapper">
+                <img class="rounded-circle" src="images/icon-scissors.svg" alt="scissors icon">
+                </span>
+            </button>
+            
+              
+              <button class="btn-circle btn-rock pick" data-choice="rock" >
+                <span class="wrapper">
+                <img class="rounded-circle" src="images/icon-rock.svg" alt="rock icon"> 
+                </span>
+            </button>
+          
+            </main>
+
+            <div class="selection" id="selection">
+               <div>
+                <h2>YOU PICKED</h2>
+
+                <button class="btn-circle btn-paper " id="user_select"  >
+                    <span class="wrapper">
+                    <img class="rounded-circle" src="images/icon-paper.svg" alt="paper icon">
+                    </span>
+                  </button>
+   
+              </div>
+              
+              <div >
+                 <h1>YOU  <span id="winner">WIN</span></h1>
+                 <button class="btn" id="reset" >PLAY AGAIN</button>
+
+              </div> 
+            
+            
+              <div >
+                <h2>THE HOUSE PICKED</h2>
+               
+                  <button class="btn-circle btn-rock "  id="computer_select" >
+                <span class="wrapper">
+                <img class="rounded-circle" src="images/icon-rock.svg" alt="rock icon"> 
+                </span>
+                  </button>
+             </div>
+           
+            </div>
+        
+        </div> 
+      
+
+
+
+    
+       <div class="container">
+       <div class="rules-modal row align-items-center" id="modal">
+         
+         <img src="images/image-rules.svg">
+         <button id="close" ><img src="images/icon-close.svg" alt="close"> </button>
+       </div>
+       </div>
+        <button type="button" class="btn-rules" id="open" >RULES</button> 
+        
+
+       
+        
+
+  
+      </section>
+    
+</body>
+</html>
